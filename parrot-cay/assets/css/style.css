@@ -20,7 +20,7 @@ a:hover {
 }
 /*---------****************---------------/
 
-/*HEADER*/
+/*HEADER - MENU*/
 header {
 	width: 100%;
 	position: absolute;
@@ -64,14 +64,14 @@ header li:last-chilld {margin-right: 0;}
 
 
 /*CONHEÇA O HOTEL*/
-.conheca-o-hotel {
+.conheca-o-hotel  {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding: 100px 50px;
 }
 
-.conheca-o-hotel h3 { font-size: 2rem; margin-bottom: 35px; color: #191c03; text-align: center;}
+.conheca-o-hotel  h3 { font-size: 2rem; margin-bottom: 35px; color: #191c03; text-align: center;}
 .conheca-o-hotel p { max-width: 800px; margin-bottom: 35px; color: #191c03; text-align: center;}
 .conheca-o-hotel hr {width: 200px; height: 2px; background-color: #191c03; margin-bottom: 70px; border:none;}
 .conheca-o-hotel .grid {
@@ -93,6 +93,40 @@ header li:last-chilld {margin-right: 0;}
 @media (max-width: 700px) {
 	.conheca-o-hotel .grid li.small,
 	.conheca-o-hotel .grid li.large {
+		flex-basis: 100%;
+	}
+} 
+
+/* QUEM SOMOS */
+.quem-somos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 100px 50px;
+}
+
+.quem-somos  h3 { font-size: 2rem; margin-bottom: 35px; color: #191c03; text-align: center;}
+.quem-somos p { max-width: 800px; margin-bottom: 35px; color: #191c03; text-align: center;}
+.quem-somos hr {width: 200px; height: 2px; background-color: #191c03; margin-bottom: 70px; border:none;}
+.quem-somos .grid {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.quem-somos .grid li {
+	height: 350px; 
+	padding: 20px;
+	border-radius: 4px;
+	background-clip: content-box; 
+	background-size: cover;
+	background-position: center;
+}
+.quem-somos .grid li.small { flex-basis: 50% }
+.quem-somos .grid li.large { flex-basis: 50%; }
+@media (max-width: 700px) {
+	.quem-somos .grid li.small,
+	.quem-somos .grid li.large {
 		flex-basis: 100%;
 	}
 } 
